@@ -72,7 +72,7 @@
 <p>Inventor：</p>
 <p><span>實際案例：本次設計連桿在Inventor的優勢僅為教育使用權索取較為容易&amp;操作容易之外並沒有甚麼特別。但因原廠Autodesk公司開發許多軟體，在配合同家產品使用時當然問題會比較少。</span></p>
 <p><span>基本描述：Inventor使用者也不算少數，但因其採租約制，所以沒有Solidworks這麼有名，其教育授權是我目前認為速度快且方便的軟體商之一，所以從Inventor入門也是選擇之一。</span></p>
-<h2><span>W7</span></h2>
+<h2>W7</h2>
 <p><span>(2a 採 Youtube 影片簡報): <a href="https://youtu.be/iOLFP90DneY">5-bar Linkage Plotter</a> 與 <a href="https://mde.tw/cad2025/content/OpenDuck.html">Openduck mini</a> 零組件設計繪製完成。</span></p>
 <ul>
 <li><span>Q1:如何切割零件?</span>
@@ -82,16 +82,15 @@
 </li>
 <li><span>Q2:為何要切割零件？</span>
 <ul>
-<li><span>A2:</span><span></span></li>
+<li><span>A2:切割零件的主要目的在於提升後續分析與模擬的準確性與可行性。透過將整體模型拆分為獨立零件，可分別設定各零件的材質、質量、慣性與關節關係，方便進行運動學、動力學與控制系統分析。此外，在模擬軟體中，零件切割也有助於定義碰撞、約束條件與致動元件，避免將整體視為單一剛體而導致模擬結果失真。</span><span></span></li>
 </ul>
 </li>
 <li><span>Q3:如何利用 <a href="https://cyberbotics.com/">Webots</a> 進行後續的控制系統設計與動態模擬 (Dynamic Simulation)？</span>
 <ul>
-<li><span>A3:</span></li>
+<li><span>A3:在完成零件切割後，可將模型匯入 Webots，並依照實際機構架構建立關節（Joint）、致動器（Motor）與感測器（Sensor）。接著設定各零件的物理參數，如質量、慣性矩與摩擦係數，以進行動態模擬。控制系統部分可透過 Webots 支援的程式語言（如 C、Python）撰寫控制器，實作位置、速度或力矩控制，並在模擬環境中觀察系統的運動行為與穩定性，藉此驗證控制策略的可行性並進行調整。</span></li>
 </ul>
 </li>
-</ul>
-<h1>Poltter過程與結果呈現</h1>
+</ul><h1>Poltter過程與結果呈現</h1>
 <h2>操作影片1</h2>
 <p><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" frameborder="0" height="315" src="//www.youtube.com/embed/IMnWOZTZWdg" title="YouTube video player" width="560"></iframe></p>
 <h2>操作影片2</h2>
